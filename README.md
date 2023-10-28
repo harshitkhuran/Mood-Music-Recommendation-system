@@ -55,9 +55,6 @@ The entire project works perfectly fine. Live detection gives good frame rates d
 - utils.py is an utility module for video streaming of web camera with threads to enable real time detection.
 - train.py is the script for image processing and training the model.
 
-# Variant:
-- Tkinter version of this app along with steps to run it is available <a href = "https://github.com/aj-naik/Emotion-Music-Recommendation/tree/tkinter">here</a>.
-
 # Issue:
 The app in current state can't be deployed on web as:
 - Opencv tries to open the camera on whatever device the app is running on. Code in current state makes use of webcam if available on server side not client side. So when app is run locally on a laptop Video Streaming through webcam is possible. But if it's deployed to a cloud, the app is stored in a data center somewhere which obviously doesn't have web camera connected to it and hence it doesn't work.
